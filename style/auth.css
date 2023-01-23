@@ -1,0 +1,210 @@
+:root{
+    --hover_eff_1: #F0F0F0;
+    --hover_eff_2: #D1D1D1;
+    --line : #D3DEDC;
+    --green : #42b549;
+    --white: #ffffff;
+    --font: rgba(49,53,59,0.68);
+    --gray: #3f3f3f;
+    --grayAlpha : rgba(39, 39, 39, 0.2);
+    --shadow : 0 4px 6px -1px rgb(0 0 0 / 7%);
+    --greenShadow : 0 4px 6px -1px rgb(66 181 49);
+    --redDiscount : #F94D63;
+    --boxDiscount : #FFDBE2;
+    --star : #FFD24C;
+    --redBox : #D6001C;
+}
+
+/* ALL */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "FontAwesome";
+    font-size: 20px;
+    color: var(--font);
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../public/login/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.auth-container{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    border-radius: .5rem;
+}
+
+/* LOGIN  */
+.login-container{
+    width: 350px;
+    background-color: var(--white);
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    
+    display: none;
+}
+.login-text{
+    font-size: 1.4rem;
+    object-fit: fill;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+.login-form-attribute{
+    background-color: var(--white);
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--line);
+    padding: .5rem;
+}
+#login-form input:focus{
+    outline: none;
+    border-color: var(--green);
+}
+
+.login-error-message{
+    margin-bottom: .3rem;
+    text-align: center;
+    color: red;
+}
+#login-button{
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#login-button:hover{
+    background-color: rgb(66 181 73 / 80%);
+}
+#login-form{
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    text-align: center;
+}
+#login-direct-register-toogle:hover{
+    color: var(--green);
+    cursor: pointer;
+}
+
+
+
+/* REGISTER */
+.register-container{
+    width: 350px;
+    background-color: var(--white);
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    
+    display: none;
+}
+.register-text{
+    font-size: 1.4rem;
+    object-fit: fill;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+.register-form-attribute{
+    background-color: var(--white);
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--line);
+    padding: .5rem;
+}
+#register-form input:focus{
+    outline: none;
+    border-color: var(--green);
+}
+
+.register-error-message{
+    margin-bottom: .3rem;
+    text-align: center;
+    color: red;
+}
+.register-gender-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.register-gender-label{
+    opacity: .7;
+    margin-right: 25px;
+    margin-left: 5px;
+}
+.register-checkbox-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.register-checkbox-label{
+    margin-left: 5px;
+    opacity: .7;
+}
+.register-radio{
+    transform: scale(1.2);
+}
+#register-checkbox{
+    transform: scale(1.2);
+}
+#register-button{
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#register-button:hover{
+    background-color: rgb(66 181 73 / 80%);
+}
+#register-form{
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    text-align: center;
+}
+#register-direct-login-toogle:hover{
+    color: var(--green);
+    cursor: pointer;
+}
+
+
+
+
+.show {
+    display: flex;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/chat.css">
+    <link rel="icon" href="./public/icon/Icon BeliSkuy.png">
+    
+    <title>Chat</title>
+</head>
+<body>
+
+    <header>
+        <navbar>
+            <div class="navbar-container">
+                            
+                <div class="navbar-item">
+                    <div class="navbar-logo-container">
+                        <a href="./index.html">
+                            <img src="./public/icon/Logo BeliSkuy.png" id="navbar-logo-image">
+                        </a>
+                    </div>
+                </div>
+                            
+                <div class="navbar-item">
+                    <div class="search-item-container">
+                        <form class="search-item-component-container">
+                            <input type="text" name="" id="search-item-input" placeholder="Cari">
+                            <button id="search-item-button">
+                                <div class="fa-solid fa-magnifying-glass"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="navbar-item">
+                    <div class="navbar-item-icon">
+                        <div class="fa-solid fa-cart-shopping" id="go-to-cart"></div>
+                    </div>
+                    
+                    <div class="navbar-item-icon">
+                        <div class="navbar-item-icon-envelope">
+                            
+                            <div class="fa-solid fa-envelope"></div>
+                            
+                            <div class="navbar-item-icon-envelope-container">
+                                
+                                <a href="./chat.html">
+                                    <div class="navbar-item-icon-envelope-component">Chat</div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navbar-item">
+                    <div class="navbar-profile-container">
+                        <div class="navbar-profile-photo">
+                            <img src="./public/navbar/profile.jpg" alt="">
+                        </div>
+                        <div class="navbar-profile-text">Guest</div>
+                        <div class="navbar-profile-dropdown-container">
+                            <div class="navbar-profile-dropdown-item">
+                                <a href="./profile.html">profile</a>
+                            </div>
+                            <div class="navbar-profile-dropdown-item">
+                                <a href="./auth.html">logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Responsive navbar -->
+            <div class="navbar-responsive-container">
+                <div class="navbar-responsive-bars">
+                    <div class="fa-solid fa-bars"></div>
+                    <div class="navbar-responsive-dropdown-container">
+                        <div class="navbar-responsive-button-container">
+                            <a href="./profile.html">
+                                <div class="navbar-profile-dropdown-item">
+                                    profile
+                                </div>
+                            </a>
+                            <a href="./index.html">
+                                <div class="navbar-profile-dropdown-item galery-hover">
+                                    galery
+                                </div>
+                            </a>
+                            <a href="./cart.html">
+                                <div class="navbar-profile-dropdown-item">
+                                    keranjang
+                                </div>
+                            </a>
+                            <a href="./auth.html">
+                                <div class="navbar-profile-dropdown-item">
+                                    logout
+                                </div>
+                            </a>
+                        </div>      
+                    </div>
+                </div>
+                
+                
+            </div>            
+            
+            <!-- <div class="line"></div> -->
+        </navbar>
+    </header>
+    
+    <div class="gray-screen-container"></div>
+    
+    <content>
+        <main>
+            <div class="main-container">
+            
+                <div class="main-chat-container">
+                
+                    <div class="main-chat-interface-container">
+                        <div class="main-chat-interface-account-list">
+                            <div class="main-chat-interface-account-container">
+                                <div class="account-item-name">Guest</div>
+                                <div class="fa-solid fa-message"></div>
+                            </div>
+                            
+                            <div class="main-chat-interface-account-item">
+                                <img class="main-chat-interface-account-image" src="./public/chat/chat-1.jpg">
+                                <div class="main-chat-interface-account-name">
+                                    <div class="main-chat-interface-account-header-name">
+                                        Army Sport
+                                    </div>
+                                    <div class="main-chat-interface-account-header-status">
+                                        Penjual
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="main-chat-interface-account-item">
+                                <img class="main-chat-interface-account-image" src="./public/chat/chat-2.png">
+                                <div class="main-chat-interface-account-name">
+                                    <div class="main-chat-interface-account-header-name">
+                                        HP Official
+                                    </div>
+                                    <div class="main-chat-interface-account-header-status">
+                                        Penjual
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>    
+                        <div class="main-chat-interface-interaction-container">
+                            <div class="main-chat-interface-interaction-component">
+                                
+                                <div class="main-chat-interface-interaction-header">
+                                    <div class="main-chat-interface-interaction-title">
+                                        <img class="main-chat-interface-account-image" src="./public/chat/chat-2.png">
+                                        <div class="main-chat-interface-account-name">
+                                            <div class="main-chat-interface-account-header-name">
+                                                HP Official
+                                            </div>
+                                            <div class="main-chat-interface-account-header-status">
+                                                Penjual
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fa-solid fa-circle-info fa-lg"></div>
+                                </div>   
+                                
+                            </div>
+                        
+                            <!-- LOAD WITH JAVASCRIPT -->
+                            <div class="main-chat-bubble-container">
+                            
+                            </div>
+                            
+                            <div class="main-form-chat-container">
+                                <input type="text" id="main-text-chat" placeholder="kirim pesan...">
+                                <div id="main-form-button-bubble">
+                                    <div class="fa-solid fa-paper-plane background"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>                
+            
+            </div>
+        </main>
+    </content>
+    
+    <footer>
+        <div class="line"></div>
+        <div class="footer-container">
+            <div class="text-footer-container first-footer">
+                <div class="text-footer-title">BeliSkuy</div>
+                <div class="text-footer-item">Tentang BeliSkuy</div>
+                <div class="text-footer-item">Blog</div>
+                <div class="text-footer-item">Mitra Blog</div>
+            </div>
+            <div class="text-footer-container second-footer">
+                <div class="text-footer-title">Beli</div>
+                <div class="text-footer-item">Tagihan & Top Up</div>
+                <div class="text-footer-item">Tukar Tambah Handphone</div>
+                <div class="text-footer-item">BeliSkuy COD</div>
+                
+                <div class="text-footer-title">Jual</div>
+                <div class="text-footer-item">Pusat Edukasi Seller</div>
+                <div class="text-footer-item">Mitra Toppers</div>
+                <div class="text-footer-item">Daftar Official Store</div>
+            </div>
+            <div class="text-footer-container third-footer">
+                <div class="text-footer-title">Bantuan dan Panduan</div>
+                <div class="text-footer-item">BeliSkuy Care</div>
+                <div class="text-footer-item">Syarat dan Ketentuan</div>
+                <div class="text-footer-item">Kebijakan Privasi</div>
+                <div class="text-footer-item">Mitra</div>
+                
+                <div class="text-footer-title">Ikuti Kami</div>
+                <div class="footer-icon-container">
+                    <div class="footer-icon-item">
+                        <a href="https://www.instagram.com/johedotcom/" target="_blank">
+                            <div class="fa-brands fa-instagram fa-2x"></div>
+                        </a>
+                    </div>
+                    
+                    <div class="footer-icon-item">
+                        <a href="https://www.linkedin.com/in/johevin-blesstowi-17b9191aa/" target="_blank">
+                            <div class="fa-brands fa-linkedin fa-2x"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="graphic-container">
+                <div class="graphic-image-container">
+                    <img src="./public/footer/tokopedia footer.jpeg" alt="man on phone">
+                </div>
+                <div class="text-footer-graphic-item">© 2019 - 2022, PT. BeliSkuy.</div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+<script src="https://kit.fontawesome.com/cda2ecf2f6.js" crossorigin="anonymous"></script>
+
+<script type="module" src="./javascript/chat/chatRender.js"></script>
+
+
+</html>

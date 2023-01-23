@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/auth.css">
+    <link rel="icon" href="./public/icon/Icon BeliSkuy.png">
+    
+    <title>Login</title>
+</head>
+
+<body>
+ 
+    <navbar>
+    </navbar>
+ 
+    <div class="auth-container">
+        <div class="login-container show">
+            <div class="login-text">Selamat Datang!</div>
+            <div class="login-form-container">
+                <form id="login-form">
+                    <input type="text" id="login-user-email" class="login-form-attribute" placeholder="&#xf0e0;  username/email" autocomplete="off">
+                    
+                    <div class="login-error-message"></div>
+                    
+                    <input type="password" id="login-password" class="login-form-attribute" placeholder="&#xf023;  password">
+                    
+                    <div class="login-error-message"></div>
+                    
+                    <div id="login-button">mulai belanja</div>
+                </form>
+            </div>
+            <div id="login-direct-register">
+                 <p>Gaada akun BeliSkuy? <br> <b id="login-direct-register-toogle">Daftar Sekarang</b></p> 
+            </div>
+        </div>
+        
+        
+        <div class="register-container">
+            <div class="register-text">Halo pengguna baru!</div>
+            <div class="register-form-container">
+                <form id="register-form">
+                    
+                    <input type="text" id="register-user" class="register-form-attribute" placeholder="&#xf4fb;  username" autocomplete="off">
+                    
+                    <div class="register-error-message"></div>
+                    
+                    <input type="email" id="register-email" class="register-form-attribute" placeholder="&#xf0e0;  email" autocomplete="off">
+                    
+                    <div class="register-error-message"></div>
+                    
+                    <input type="password" id="register-password" class="register-form-attribute" placeholder="&#xf023;  password">
+                    
+                    <div class="register-error-message"></div>
+                    
+                    <input type="password" id="register-confirm-password" class="register-form-attribute" placeholder="&#xf13e;  confirm-password">
+                    
+                    <div class="register-error-message"></div>
+                    
+                    <input type="date" id="register-date" class="register-form-attribute">
+                    
+                        
+                    <div class="register-gender-container">
+                        <input type="radio" name="gender" class="register-radio" id="register-male-radio"> 
+                        <div class="register-gender-label">pria</div>
+                        
+                        <input type="radio" name="gender" class="register-radio" id="register-female-radio">
+                        <div class="register-gender-label">wanita</div>
+                    </div>
+                    
+                    <div class="register-checkbox-container">
+                        <input type="checkbox" id="register-checkbox">
+                        <div class="register-checkbox-label">saya setuju untuk mendaftar</div>
+                    </div>
+                    
+                    <div class="register-error-message"></div>
+                    
+                    <div id="register-button">daftar</div>
+                </form>
+            </div>
+            <div id="register-direct-login">
+                 <p>Sudah punya akun BeliSkuy? <br> <b id="register-direct-login-toogle">Login Sekarang</b></p> 
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+
+<script type="module" src="./javascript/auth/auth.js"></script>
+<script src="https://kit.fontawesome.com/cda2ecf2f6.js" crossorigin="anonymous"></script>
+
+</html>
